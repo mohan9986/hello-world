@@ -214,7 +214,10 @@
     <url>http://github.com/jleetutorial/maven-project</url>
   </scm>
 	
-  <distributionManagement>
+  <prerequisites>
+    <maven>3.0.3</maven>
+  </prerequisites>
+<distributionManagement>
     <repository>
         <id>jenkins-upload</id>
         <name>release softx</name>
@@ -225,10 +228,8 @@
         <name>snapshot softx</name>
         <url>http://212.2.247.218:8081/repository/jenkins-upload/</url>
     </snapshotRepository>
-  </distributionManagement>
-
-  <prerequisites>
-    <maven>3.0.3</maven>
-  </prerequisites>
-
+</distributionManagement>
+	
+	
+	
 </project>
